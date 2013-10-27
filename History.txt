@@ -1,0 +1,46 @@
+Shutdowner History
+------------------------------------------
+Whats happening/happend to Shutdowner
+Current Version : 0.30
+Author : Lahar
+
+0.30
+--------------------------------------
+! Actually planned to stop the development of this app in Ver 0.20 but.........
++ Removed many bugs and rewritten many codes
++ Added Lightning Shutdown & Lightning Restart
++ Now user can enable Hibernate feature from app itself
++ Added Force support for Hibernation and Standby
++ Did very heavy memory optimizations. 
+- Removed packing 
+! Removed a bug which prevents it from running in Windows 2000
++ Improved countdown dialog 
+
+0.21
+--------------------------------------
+! Private Version
+
+0.20
+--------------------------------------
++ First use as a True software
++ Added Minimised, Sound & Force options
++ Added Stop Button
+- Removed bugs 
++ Used packers to reduce size
+
+0.17
+-------------------------------------
++ Used Bitmaps in App
++ Added Startup option
+
+0.12
+--------------------------------------
++ Added Tray and Timer support
+
+0.11
+-------------------------------------
++ Added Monitor and Screensaver options
+
+0.10
+--------------------------------------
++ First appearance as a primitive/Newbie tool

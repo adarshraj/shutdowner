@@ -1,0 +1,2 @@
+These powrprof libraries are provided by Vortex.
+__Lahar__
