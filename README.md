@@ -1,4 +1,4 @@
-shutdowner
+Shutdowner
 ==========
 
 Windows power options like Shutdown, Hibernate etc.
