@@ -32,17 +32,9 @@ start:
 				MOV hInstance, EAX
 				mov icex.dwSize,sizeof INITCOMMONCONTROLSEX
     			mov icex.dwICC,ICC_DATE_CLASSES
-    			;mov icex.dwICC,ICC_PROGRESS_CLASS
-    			;mov icex.dwICC,ICC_BAR_CLASSES
-    			;mov icex.dwICC,ICC_LISTVIEW_CLASSES
-    			;mov icex.dwICC,ICC_STANDARD_CLASSES
-    			;mov icex.dwICC,ICC_USEREX_CLASSES
-    			;mov icex.dwICC,ICC_WIN95_CLASSES
-    			;mov icex.dwICC,ICC_NATIVEFNTCTL_CLASS
     			invoke InitCommonControlsEx,ADDR icex 
     			invoke InitCommonControls
 				invoke GetCommandLine
-				;invoke MessageBox, 0, eax, addr szErrorCaption, MB_OK + MB_ICONINFORMATION
 				invoke DialogBoxParam, hInstance, IDD_DLGBOX, NULL, ADDR DlgProc, NULL
 				invoke ExitProcess, 0
 			.else
@@ -87,8 +79,6 @@ m2m DlgMessage, uMsg
 		invoke ShowWindow, hWnd,SW_MINIMIZE 
 		
 	.ELSEIF uMsg == WM_INITDIALOG
-		
-  		;invoke KeyValueStringCheck, addr szKeyApplication,addr szHour
 
 		;Setting Caption of the App
 		invoke SetWindowText, hWnd, ADDR szProgramName
@@ -850,26 +840,10 @@ LOCAL ft2 :	FILETIME
 			
 				;Get time from DTP & convert it into Filetime, We don't need Millisecond accuracy so make that zero
 				invoke SendDlgItemMessage, DlgHandle, IDC_DTP, DTM_GETSYSTEMTIME,0,addr st1		
-				;mov st1.wMilliseconds,0
-				;mov st1.wDay,0
-				;mov st1.wDayOfWeek,0
-				;mov st1.wMonth,0
-				;mov st1.wYear,0
-				;st1.
-				;invoke SystemTimeToFileTime, addr st1, addr ft1
-				;invoke KeyValueCreate, addr szKeyApplication,addr szDailyDataHigh,ft2.dwHighDateTime,1
-				;invoke KeyValueCreate, addr szKeyApplication,addr szDailyDataLow,ft2.dwLowDateTime,1
 				xor eax, eax
 				mov ax, st1.wHour
-				invoke wsprintf, addr nNew, addr nDword, eax
-				;invoke KeyValueCreate, addr szKeyApplication,addr szHour,addr nNew ,1
-				;invoke KeyValueCreate, addr szKeyApplication,addr szHour,addr nNew ,1
-				;add esp, 10
-				
-				invoke KeyValueCreate, addr szKeyApplication,addr szDaily,addr dwValue1,1
-				
-				;invoke Sleep,800
-				;invoke KeyValueCreate, addr szKeyApplication,addr szHour, addr nNew,1
+				invoke wsprintf, addr nNew, addr nDword, eax				
+				invoke KeyValueCreate, addr szKeyApplication,addr szDaily,addr dwValue1,1		
 				invoke KeyValueCreateString, addr szKeyApplication,addr szHour, addr nNew,1
 				
 			.ELSEIF EAX == BST_UNCHECKED
