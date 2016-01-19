@@ -48,4 +48,4 @@ Contact
 --------------
 You can send me suggestions, criticisms, and commenst about this app to Laharrush@yahoo.com (No Spam)
 
-__Lahar__
+Adarsh Raj
