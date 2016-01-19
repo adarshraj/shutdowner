@@ -1,12 +1,12 @@
 -----------------------------------------------------------------------------------------------------
 Shutdowner 0.20
-copyright © 2007 by Lahar
+copyright © 2007 by Adarsh Raj
 All Rights Reserved
 -----------------------------------------------------------------------------------------------------
 
 Shutdowner Info
 --------------------
-Shutdowner is a small app created in MASM to do windows power operations such as Shutdown, Restart, Logoff, Hibernate and many others. It also includes timer which will help you set and do actions at whatever time you need. This is a freeware and you can use this for your personal uses and DONT use this for commercial purposes. I tried my best to avoid error/ bugs in this app. If u find one inform at address specified below.
+Shutdowner is a small appliation created in MASM(Win32 ASM) to do windows power operations such as Shutdown, Restart, Logoff, Hibernate and many others. It also includes timer which will help you set and do actions at specified time. This is a freeware and you can use this applications for any of your personal uses but commercial use is strictly prohibited. I tried my best to avoid error/ bugs in this application. If you find one inform me at the address specified at the bottom.
 
 Application 	: Shutdowner 
 Version		: 0.20
@@ -46,6 +46,6 @@ I hereby convey my greetz to all those who helped me directly or who's codes hel
 
 Contact
 --------------
-You can send me suggestions, criticisms, and commenst about this app to Laharrush@yahoo.com (No Spam)
+You can send me suggestions, criticisms, and comments about this app to adarsh@adarshr.in (No Spam)
 
 Adarsh Raj
